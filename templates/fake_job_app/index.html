@@ -1,0 +1,178 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake Job Detection Application</title>
+    <link rel="stylesheet" href="{% static '/css/form.css' %}">
+</head>
+
+<body>
+<div class="formbold-main-wrapper">
+    <!-- Author: FormBold Team -->
+    <!-- Learn More: https://formbold.com -->
+    <div class="formbold-form-wrapper">
+       <img src="{% static '/media/fake_job_image.jpg' %}">
+      <form action="{% url 'result' %}" method="POST">
+        
+        {% csrf_token %}
+        <div class="formbold-form-title">
+            <h2 class="">Fake Job Detection</h2>
+            <br> 
+            <h3 class="">Welcome <b> {{ result}} </b> !!!! </h3>
+            <br>   
+          </div>
+        <div class="formbold-mb-3">
+          <div>
+            <label for="title" class="formbold-form-label"> Title </label>
+            <input
+              type="text"
+              name="title"
+              id="title"
+              class="formbold-form-input"
+            />
+          </div>
+        </div>
+  
+        <div class="formbold-mb-3">
+          <div>
+              <label for="loc" class="formbold-form-label"> Location </label>
+              <input
+              type="text"
+              name="loc"
+              id="loc"
+              class="formbold-form-input"
+              />
+          </div>
+        </div>
+  
+        <div class="formbold-mb-3">
+            <div>
+                <label for="dept" class="formbold-form-label"> Department </label>
+                <input
+                type="text"
+                name="dept"
+                id="dept"
+                class="formbold-form-input"
+                />
+            </div>
+          </div>
+  
+          <div class="formbold-mb-3">
+            <div>
+                <label for="comp_pro" class="formbold-form-label"> Company Profile </label>
+                <input
+                type="text"
+                name="comp_pro"
+                id="comp_pro"
+                class="formbold-form-input"
+                />
+            </div>
+          </div>
+
+          <div class="formbold-mb-3">
+            <div>
+                <label for="desc" class="formbold-form-label"> Description </label>
+                <input
+                type="text"
+                name="desc"
+                id="desc"
+                class="formbold-form-input"
+                />
+            </div>
+          </div>
+
+          <div class="formbold-mb-3">
+            <div>
+                <label for="req" class="formbold-form-label"> Requirements </label>
+                <input
+                type="text"
+                name="req"
+                id="req"
+                class="formbold-form-input"
+                />
+            </div>
+          </div>
+
+          <div class="formbold-mb-3">
+            <div>
+                <label for="bene" class="formbold-form-label"> Benefits </label>
+                <input
+                type="text"
+                name="bene"
+                id="bene"
+                class="formbold-form-input"
+                />
+            </div>
+          </div>
+
+          <div class="formbold-mb-3">
+            <div>
+                <label for="em_type" class="formbold-form-label"> Employment Type </label>
+                <input
+                type="text"
+                name="em_type"
+                id="em_type"
+                class="formbold-form-input"
+                />
+            </div>
+          </div>
+
+          <div class="formbold-mb-3">
+            <div>
+                <label for="re_exp" class="formbold-form-label"> Required Experience </label>
+                <input
+                type="text"
+                name="re_exp"
+                id="re_exp"
+                class="formbold-form-input"
+                />
+            </div>
+          </div>
+
+          <div class="formbold-mb-3">
+            <div>
+                <label for="re_edu" class="formbold-form-label"> Required Education </label>
+                <input
+                type="text"
+                name="re_edu"
+                id="re_edu"
+                class="formbold-form-input"
+                />
+            </div>
+          </div>
+
+          <div class="formbold-mb-3">
+            <div>
+                <label for="ind" class="formbold-form-label"> Industry </label>
+                <input
+                type="text"
+                name="ind"
+                id="ind"
+                class="formbold-form-input"
+                />
+            </div>
+          </div>
+
+          <div class="formbold-mb-3">
+            <div>
+                <label for="fun" class="formbold-form-label"> Function </label>
+                <input
+                type="text"
+                name="fun"
+                id="fun"
+                class="formbold-form-input"
+                />
+            </div>
+          </div>
+  
+        
+        <input type="submit" class="formbold-btn">
+      </form>
+    </div>
+  </div>
+</body>
+</html>
